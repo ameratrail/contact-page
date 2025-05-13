@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 60px;
+      background-color: #f8f8f8;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    a {
+      display: block;
+      margin: 20px auto;
+      font-size: 20px;
+      text-decoration: none;
+      color: #007BFF;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // Block obvious bots and crawlers
+    if (/bot|crawl|spider|preview/i.test(navigator.userAgent)) {
+      window.location.href = "https://example.com";
+    }
+  </script>
+</head>
+<body>
+  <h2>Contact Us</h2>
+  <div id="links"></div>
+
+  <script>
+    // Store contact details here (makes scraping harder)
+    const phone = "+14076392812";
+    const email = "commsales@attrailercenter.com";
+
+    const linksDiv = document.getElementById("links");
+
+    linksDiv.innerHTML = `
+      <a href="tel:${phone}">📞 Call Us</a>
+      <a href="mailto:${email}">✉️ Email Us</a>
+    `;
+  </script>
+</body>
+</html>
