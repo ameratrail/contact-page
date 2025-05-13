@@ -4,49 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Contact</title>
+  <title>AT Trailer Center – Contact</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding-top: 60px;
-      background-color: #f8f8f8;
+      background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+      color: #333;
+      padding: 40px 20px;
     }
-    h2 {
+    .logo {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p.description {
+      font-size: 16px;
       margin-bottom: 30px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    a {
+    .contact-link {
       display: block;
-      margin: 20px auto;
-      font-size: 20px;
+      margin: 15px auto;
+      font-size: 18px;
+      color: #0056b3;
       text-decoration: none;
-      color: #007BFF;
+      font-weight: bold;
     }
-    a:hover {
+    .contact-link:hover {
       text-decoration: underline;
+    }
+    .contact-info {
+      font-size: 16px;
+      margin-top: 30px;
+      color: #666;
     }
   </style>
   <script>
     // Block obvious bots and crawlers
     if (/bot|crawl|spider|preview/i.test(navigator.userAgent)) {
-      window.location.href = "https://example.com";
+      window.location.href = "https://google.com";
     }
   </script>
 </head>
 <body>
-  <h2>Contact Us</h2>
+  <!-- Replace the logo source with your actual logo URL -->
+  <img src="https://www.attrailercenter.com/wp-content/uploads/2024/08/AT-Trailer-Center-logo-new.webp" alt="AT Trailer Center Logo" class="logo" />
+
+  <h1>Commercial Sales Contact</h1>
+  <p class="description">
+    This page provides contact info for commercial sales at <strong>AT Trailer Center</strong> in St. Cloud, Florida. Reach out to Randy Davis for all commercial trailer inquiries.
+  </p>
+
   <div id="links"></div>
 
+  <div class="contact-info">
+    Randy Davis<br />
+    Commercial Sales – AT Trailer Center
+  </div>
+
   <script>
-    // Store contact details here (makes scraping harder)
-    const phone = "+14076392812";
+    const phone = "+14078921100";
     const email = "commsales@attrailercenter.com";
 
     const linksDiv = document.getElementById("links");
 
     linksDiv.innerHTML = `
-      <a href="tel:${phone}">📞 Call Us</a>
-      <a href="mailto:${email}">✉️ Email Us</a>
+      <a href="tel:${phone}" class="contact-link">📞 Call Randy</a>
+      <a href="mailto:${email}" class="contact-link">✉️ Email Randy</a>
     `;
   </script>
 </body>
